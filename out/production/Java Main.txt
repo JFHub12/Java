@@ -1,0 +1,110 @@
+Variable = a reusable container for a value 
+           a variable behaves as if it was the valu  it contains
+
+*Types of variable
+Primitive = simple value stored directly in memory (stack)
+Reference = memory address (stack) that points to the (heap)
+
+
+Primitive   vs   Reference
+---------        ---------
+int              string
+double           array
+char             object
+boolean
+byte
+short
+long
+float
+void
+
+
+2 steps to creating a variable
+------------------------------
+1. declaration 
+int age;
+
+2. assignment
+int age = 21;// can only store whole number
+
+
+Class Scanner
+A Scanner is an object that allow you to accept users input.
+You have to import java.util.Scanner module to be able to use the scanner class
+
+
+If Statement
+It performs a block of code if its condition is true
+
+MATH FUNCTIONS
+
+Math.PI - for the value of PI
+Math.E
+pow(2,3) - for exponential(2 power 3)
+Math.abs(-5) - to find the absolute number
+Math.sqrt(9) - the square root of a number 
+Math.round(3.14) - to round a number to the nearesss whole number: 4
+Math.ceil(3.14) - to round a decimal to the top: 4
+Math.floor(3.99) - to round a decimal down: 3
+Math.max(10, 20) - to find the highest number: 20 
+Math.min(10, 20) - to find the least number: 10 
+
+
+printf() = is a method used to format output
+%[flags][width][.precision][specifier-charatere]
+
+[specifier-charatere]
+string - %s
+char - %c
+int - %d
+double - %f
+float - %f
+boolean - %b 
+
+[.precision]
+%.3f, %.2f, %.1f
+
+[width]  
+0 = zero padding
+number = right justified padding
+negative number = left justified padding
+
+[flags]
++ = output a plus
+, = comma grouping separator
+( = negative numbers are enclosed in ()
+space = display a minus if negative, space if positove
+
+
+
+STRINGS METHONDS
+.length() - the length of a string 
+.charAt(specify the index) - use access a charater but it index
+.indexOf(" any charater") - the charater first index you want to know
+.lastIndexOf(" any charater") - the charater of the last index
+.toUpperCase() - 
+.toLowerCase() - 
+.trim() - eliminate all space back and front of a string
+.repalce("what you want to replace", "with the new replacement")
+.isEmpty() - to check where the variable is empty or not
+.contains(" ") - if a variable contains space or not
+.equals() - to check if two strings are equal
+.equalsIgnoreCase() - it ignores the case sensitivity of a string 
+
+
+Substring()
+A method used to extracy a portion of a string
+      .substring(start, end )
+
+Enhanced switch = A replacement to many else if statement
+
+LOGICAL OPERATORS
+|| - OR 
+&& - AND 
+1 - NOT 
+
+While loop
+Loop till a condition is true. 
+
+Do_while loop
+Loop atleast once then check the condition if the condition is true

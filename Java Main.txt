@@ -1,0 +1,209 @@
+Variable = a reusable container for a value 
+           a variable behaves as if it was the valu  it contains
+
+*Types of variable
+Primitive = simple value stored directly in memory (stack)
+Reference = memory address (stack) that points to the (heap)
+
+
+Primitive   vs   Reference
+---------        ---------
+int              string
+double           array
+char             object
+boolean
+byte
+short
+long
+float
+void
+
+
+2 steps to creating a variable
+------------------------------
+1. declaration 
+int age;
+
+2. assignment
+int age = 21;// can only store whole number
+
+
+Class Scanner
+A Scanner is an object that allow you to accept users input.
+You have to import java.util.Scanner module to be able to use the scanner class
+
+
+If Statement
+It performs a block of code if its condition is true
+
+MATH FUNCTIONS
+
+Math.PI - for the value of PI
+Math.E
+pow(2,3) - for exponential(2 power 3)
+Math.abs(-5) - to find the absolute number
+Math.sqrt(9) - the square root of a number 
+Math.round(3.14) - to round a number to the nearesss whole number: 4
+Math.ceil(3.14) - to round a decimal to the top: 4
+Math.floor(3.99) - to round a decimal down: 3
+Math.max(10, 20) - to find the highest number: 20 
+Math.min(10, 20) - to find the least number: 10 
+
+
+printf() = is a method used to format output
+%[flags][width][.precision][specifier-charatere]
+
+[specifier-charatere]
+string - %s
+char - %c
+int - %d
+double - %f
+float - %f
+boolean - %b 
+
+[.precision]
+%.3f, %.2f, %.1f
+
+[width]  
+0 = zero padding
+number = right justified padding
+negative number = left justified padding
+
+[flags]
++ = output a plus
+, = comma grouping separator
+( = negative numbers are enclosed in ()
+space = display a minus if negative, space if positove
+
+
+
+STRINGS METHONDS
+.length() - the length of a string 
+.charAt(specify the index) - use access a charater but it index
+.indexOf(" any charater") - the charater first index you want to know
+.lastIndexOf(" any charater") - the charater of the last index
+.toUpperCase() - 
+.toLowerCase() - 
+.trim() - eliminate all space back and front of a string
+.repalce("what you want to replace", "with the new replacement")
+.isEmpty() - to check where the variable is empty or not
+.contains(" ") - if a variable contains space or not
+.equals() - to check if two strings are equal
+.equalsIgnoreCase() - it ignores the case sensitivity of a string 
+
+
+Substring()
+A method used to extracy a portion of a string
+      .substring(start, end )
+
+Enhanced switch = A replacement to many else if statement
+
+LOGICAL OPERATORS
+|| - OR 
+&& - AND 
+1 - NOT 
+
+While loop
+Loop till a condition is true. 
+
+Do_while loop
+Loop atleast once then check the condition if the condition is true
+
+For loop 
+Execute some code certian number of times 
+
+- break = it is use to break out of a loop
+- continue = skip current iteration of a loop (SKIP)
+
+Method = a block of resuablw code that is executed when called ()
+
+Overloading methods 
+<ethods rhat share the same name, but different parameters
+      signature = name + parameters
+
+Variable scoop
+Where variable can be access
+
+- Local variable = a variable access inside a method
+- GLOBAL variable = a varible whiich can be access outside a method
+
+
+Arrays
+A collection of values of the same data type.
+eg. int[] evenNumbers = {2,4,6,8,10};
+access element using the index of it 
+
+
+Note:
+• 🟥 Red Underline: A Syntax Error. The code is broken, it will not compile, and you must fix it before running.
+• 🟨 Yellow/Orange Underline: A Warning or Suggestion. The code works perfectly, but the IDE is just giving you a friendly tip to make it cleaner, safer, or more modern.
+
+Varargs
+Tey allow a method to accept a caring # of arhuments
+      makes methods more flexible, no need for overloaded methods
+      java will pack the arguemnt into an array
+      ...(ellispsis)
+
+Object - An entity that holds data (attributes)
+         and can perform actions(Methods)
+         It is a Reference data type
+         We store the data in a location called the heap
+
+Constructor - A special method to initialize object
+              You can pass agruments to a Constructor
+              and set yp initial values
+
+Overloading Constructor - Allow a class to have multiple constructors
+                          wiht different parameter lists.
+                          Enable objects to be initialized in various ways.
+
+Static - Makes variable or method belong to the class
+         rather than to any specific object.
+         Commonly used for utility methods or shared resources.
+          
+**Inheritance - One class inherits the attributes and methods from another class.
+             Child <- Parent
+
+             Types
+             - multilevel = Child <- Parent <- Grandparent
+
+             super = Refers to the parent class (subclass <- superclass)
+                     Used in constuctores and method overriding
+                     Calls the parent constructor to initilizr attributes
+
+Method overriding - When a subclass provides its own implementation of a methodthat is already defined.
+                    Allows for the  code reusability and give specific implementations.
+                    A the @override to the methods with is overriding from the suber classs
+
+
+.toString() - Method inherited from the object class.
+              Used to return a string representation of an object.
+              By default, it returns a hash code as a unique identifier.
+              It can be overriden to provide meaningful details
+
+**Abstraction - Used ro define abstract classes and methods.
+                Abstraction is the process of hiding implentation details and showing only the 
+                essential features;
+                Abstract CLASSES can't be instantiated directly
+                Can contain 'abstract' methods (which mush be implentated)
+                Can contain 'concrete' methods (which are inherited)
+
+Interface = A blueprint for a class that specifies a set of abstart methods
+            that implementating classes MUST define.
+            Supports multiple inheritance-like behavior
+
+**Polymorphism = "POLY" means "MANY"
+               "MORPHISM" means "SHAPE"
+               Objests can identity as other objects.
+               Object can be treated as objects of a common superclass.
+
+Runtime Polymorphism =  When the method that gets executed is decided at runtime base on
+                        the actual type of the object.
+  
+GETTERS = Methods that make a field READABLE
+SETTERS = Methods that make a field WRITEABLE
+They help protect object data and add rules for accessing or modifying them.
+
+Aggrgation = represents a "has-a" relationship between objects.
+             One object contans another as part of its structure,
+             but the contained object/s can exit independently
